@@ -1,6 +1,7 @@
 name: 'Documentation (PR)'
 
 on:
+  workflow_run:
   pull_request:
     paths:
       - 'docs/**'

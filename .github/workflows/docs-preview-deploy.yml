@@ -36,9 +36,7 @@ jobs:
         run: tar -xf artifact.tar.zst
 
       - name: 'Restore preserved ENV'
-        run: |
-        cat pr.env >> "${GITHUB_ENV}"
-        echo ${{ secrets.MY_SECRET }}
+        run: cat pr.env >> "${GITHUB_ENV}"
 
       # ==================== #
       # Deploy preview build #

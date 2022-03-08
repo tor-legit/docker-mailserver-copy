@@ -46,6 +46,7 @@ test/duplicate_configs
 test/alias
 test/quota
 test/relay
+test/not_relay
 
 config.bak
 testconfig.bak

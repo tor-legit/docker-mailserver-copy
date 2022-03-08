@@ -1,5 +1,5 @@
 ---
-title: 'FAQ'
+title: 'FAQ you
 ---
 
 ### What kind of database are you using?

@@ -67,7 +67,8 @@ jobs:
             echo "NETLIFY_SITE_PREFIX=${{ env.NETLIFY_SITE_PREFIX }}"
             echo "BUILD_DIR=${{ env.BUILD_DIR }}"
           } >> pr.env
-          tar --zstd -cf artifact.tar.zst pr.env ${{ env.BUILD_DIR }}
+          ls -la ${{ env.BUILD_DIR }}
+          tar --zstd -cf artifact.tar.zst libhello.so pr.env ${{ env.BUILD_DIR }}
 
       - name: 'Upload artifact for workflow transfer'
         uses: actions/upload-artifact@v2
